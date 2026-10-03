@@ -7,6 +7,8 @@
 <meta name="description" content="Fatima Zahra Rhaouate : hôtellerie, événementiel et restauration. Diplômée aux États-Unis, un an à Walt Disney World, trilingue français, arabe, anglais. Disponible au Maroc.">
 <meta name="theme-color" content="#3B3FD6">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://fatimazahrarhaouate.github.io/">
+<link rel="canonical" href="https://fatimazahrarhaouate.github.io/">
 <meta property="og:title" content="Fatima Zahra Rhaouate — Hôtellerie & événementiel">
 <meta property="og:description" content="Formée aux États-Unis, prête pour le Maroc. Guest relations, événementiel, MICE et restauration, en français, arabe et anglais.">
 <meta property="og:locale" content="fr_MA">
@@ -190,7 +192,7 @@ footer{text-align:center;color:var(--muted);font-size:.9rem;padding:0 1.5rem 3re
     <p class="sub" data-t="sub">Hôtellerie, événementiel et restauration. Formée aux États-Unis, prête pour le Maroc.</p>
     <div class="ctas">
       <a class="btn wa" id="wa1" href="https://wa.me/212724806462" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span data-t="cta1">Écrire sur WhatsApp</span></a>
-      <a class="btn" id="cv" href="https://wa.me/212724806462" target="_blank" rel="noopener" data-t="cta2">Recevoir mon CV</a>
+      <a class="btn" id="cv" href="CV_Fatima_Zahra_Rhaouate_FR.pdf" download data-t="cta2">Télécharger mon CV</a>
     </div>
   </div>
   <div class="arch-wrap">
@@ -252,7 +254,7 @@ footer{text-align:center;color:var(--muted);font-size:.9rem;padding:0 1.5rem 3re
 <script>
 const D={
 fr:{n1:"Pourquoi moi",n2:"Parcours",n3:"Contact",badge:"Disponible · Maroc",hello:"Bonjour, je suis Fatima Zahra.",
- sub:"Hôtellerie, événementiel et restauration. Formée aux États-Unis, prête pour le Maroc.",cta1:"Écrire sur WhatsApp",cta2:"Recevoir mon CV",
+ sub:"Hôtellerie, événementiel et restauration. Formée aux États-Unis, prête pour le Maroc.",cta1:"Écrire sur WhatsApp",cta2:"Télécharger mon CV (PDF)",
  words:["Accueillir","Organiser","Coordonner","Régaler"],
  why_h:"Pourquoi moi",why_l:"Ce que j'apporte à un hôtel, une agence ou un restaurant dès le premier jour.",
  why:[["ticket","Les standards Disney","Un an au cœur de l'une des marques de service les plus exigeantes au monde, plus un diplôme en management de l'hôtellerie aux États-Unis."],
@@ -273,7 +275,7 @@ fr:{n1:"Pourquoi moi",n2:"Parcours",n3:"Contact",badge:"Disponible · Maroc",hel
  wa:"Bonjour Fatima Zahra, j'ai vu votre portfolio et j'aimerais échanger avec vous.",cv:"Bonjour Fatima Zahra, pourriez-vous m'envoyer votre CV ?",
  title:"Fatima Zahra Rhaouate — Hôtellerie & événementiel"},
 en:{n1:"Why me",n2:"Journey",n3:"Contact",badge:"Available · Morocco",hello:"Hi, I'm Fatima Zahra.",
- sub:"Hospitality, events and food & beverage. Trained in the US, ready for Morocco.",cta1:"Message me on WhatsApp",cta2:"Get my CV",
+ sub:"Hospitality, events and food & beverage. Trained in the US, ready for Morocco.",cta1:"Message me on WhatsApp",cta2:"Download my resume (PDF)",
  words:["Welcome","Plan","Host","Delight"],
  why_h:"Why me",why_l:"What I bring to a hotel, agency or restaurant from day one.",
  why:[["ticket","Disney standards","A full year inside one of the most demanding service brands in the world, plus a US degree in Hospitality Management."],
@@ -294,7 +296,7 @@ en:{n1:"Why me",n2:"Journey",n3:"Contact",badge:"Available · Morocco",hello:"Hi
  wa:"Hi Fatima Zahra, I saw your portfolio and would like to talk.",cv:"Hi Fatima Zahra, could you send me your CV?",
  title:"Fatima Zahra Rhaouate — Hospitality & Events"},
 ar:{n1:"لماذا أنا",n2:"مساري",n3:"تواصل",badge:"متاحة · المغرب",hello:"مرحبًا، أنا فاطمة الزهراء.",
- sub:"الضيافة والفعاليات والمطاعم. تكوين أمريكي، وجاهزة للمغرب.",cta1:"راسلوني على واتساب",cta2:"اطلبوا سيرتي الذاتية",
+ sub:"الضيافة والفعاليات والمطاعم. تكوين أمريكي، وجاهزة للمغرب.",cta1:"راسلوني على واتساب",cta2:"تحميل السيرة الذاتية (PDF)",
  words:["نستقبل","ننظّم","ننسّق","نُبهِر"],
  why_h:"لماذا أنا",why_l:"ما أقدّمه لفندق أو وكالة أو مطعم منذ اليوم الأول.",
  why:[["ticket","معايير ديزني","سنة كاملة داخل واحدة من أكثر علامات الخدمة تطلّبًا في العالم، إلى جانب إجازة في إدارة الضيافة من الولايات المتحدة."],
@@ -330,7 +332,7 @@ function render(l){
   document.getElementById("cards").innerHTML=d.cards.map(c=>`<article class="card"><div class="pic" style="background:${c[1]}"><svg class="tiles" width="100%" height="100%" aria-hidden="true"><rect width="100%" height="100%" fill="url(#zellige)"/></svg>${icon(c[0],"ic")}</div><div class="txt"><span class="when">${esc(c[2])}</span><h3>${esc(c[3])}</h3><p class="org">${esc(c[4])}</p><p class="d">${esc(c[5])}</p></div></article>`).join("");
   document.getElementById("chips").innerHTML=d.chips.map(c=>`<li>${esc(c)}</li>`).join("");
   ["wa1","wa2"].forEach(id=>document.getElementById(id).href=WA+encodeURIComponent(d.wa));
-  document.getElementById("cv").href=WA+encodeURIComponent(d.cv);
+  document.getElementById("cv").href=l==="en"?"Resume_Fatima_Zahra_Rhaouate_EN.pdf":"CV_Fatima_Zahra_Rhaouate_FR.pdf";
   const h=document.documentElement; h.lang=l; h.dir=l==="ar"?"rtl":"ltr"; document.title=d.title;
   document.querySelectorAll(".langs button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===l)));
   try{localStorage.setItem("fzr-lang",l)}catch(e){}
