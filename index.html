@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fatima Zahra Rhaouate — Hôtellerie & événementiel</title>
+<meta name="description" content="Fatima Zahra Rhaouate : hôtellerie, événementiel et restauration. Diplômée aux États-Unis, un an à Walt Disney World, trilingue français, arabe, anglais. Disponible au Maroc.">
+<meta name="theme-color" content="#3B3FD6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fatima Zahra Rhaouate — Hôtellerie & événementiel">
+<meta property="og:description" content="Formée aux États-Unis, prête pour le Maroc. Guest relations, événementiel, MICE et restauration, en français, arabe et anglais.">
+<meta property="og:locale" content="fr_MA">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_MA">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Cg fill='%233B3FD6'%3E%3Crect x='-34' y='-34' width='68' height='68'/%3E%3Crect x='-34' y='-34' width='68' height='68' transform='rotate(45)'/%3E%3C/g%3E%3Ccircle r='12' fill='%23F2B23A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F8E7E0; --card:#FFF8F4; --ink:#1F1B3D; --muted:#5E5873;
+  --blue:#3B3FD6; --saffron:#F2B23A; --mint:#2F9A78; --rose:#E4676A; --line:#EBCFC4;
+  --on-blue:#FFF8F4;
+  --display:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+  --body:"Figtree","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#17142C; --card:#221E3D; --ink:#F8ECE6; --muted:#BDB5CF; --blue:#7C80FF; --saffron:#F5BE55; --mint:#5CC7A3; --rose:#F08A8C; --line:#342F55; --on-blue:#17142C;}}
+:root[data-theme="dark"]{--bg:#17142C; --card:#221E3D; --ink:#F8ECE6; --muted:#BDB5CF; --blue:#7C80FF; --saffron:#F5BE55; --mint:#5CC7A3; --rose:#F08A8C; --line:#342F55; --on-blue:#17142C;}
+:lang(ar){--display:"Cairo",system-ui,sans-serif; --body:"Cairo",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.08rem/1.6 var(--body);overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px;border-radius:6px}
+.wrap{max-width:74rem;margin:0 auto;padding:0 1.5rem}
+
+/* Header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px)}
+.bar .wrap{display:flex;align-items:center;gap:1.75rem;padding-block:.85rem}
+.logo{font-family:var(--display);font-weight:800;font-size:1.35rem;text-decoration:none;margin-inline-end:auto;display:flex;align-items:center;gap:.5rem}
+.logo svg{width:26px;height:26px;color:var(--blue)}
+.nav{display:flex;gap:1.5rem}.nav a{text-decoration:none;font-weight:500;color:var(--muted)}.nav a:hover{color:var(--ink)}
+.langs{display:flex;background:var(--card);border-radius:999px;padding:3px;border:1px solid var(--line)}
+.langs button{all:unset;cursor:pointer;padding:.3rem .75rem;border-radius:999px;font-weight:600;font-size:.88rem;color:var(--muted)}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.langs button:focus-visible{outline:3px solid var(--saffron)}
+@media (max-width:780px){.nav{display:none}}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;padding-block:3rem 4rem}
+@media (max-width:860px){.hero{grid-template-columns:1fr;padding-top:1.5rem}}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem;font-weight:600;font-size:.92rem}
+.badge i{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px color-mix(in srgb,var(--mint) 25%,transparent)}
+.hello{font-family:var(--display);font-weight:800;font-size:clamp(2.9rem,7.5vw,5.6rem);line-height:.95;letter-spacing:-.025em;margin:1.2rem 0 1.1rem}
+:lang(ar) .hello{line-height:1.25;letter-spacing:0}
+.sub{font-size:clamp(1.15rem,2vw,1.35rem);color:var(--muted);max-width:32rem;margin:0 0 2rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.wa{background:var(--mint);border-color:var(--mint);color:#fff}
+.btn svg{width:20px;height:20px}
+.arch-wrap{position:relative;justify-self:center;width:min(360px,80vw)}
+.arch{aspect-ratio:3/4;border-radius:999px 999px 18px 18px;background:var(--blue);position:relative;overflow:hidden;display:grid;place-items:center}
+.arch .tiles{position:absolute;inset:0;opacity:.18;color:var(--on-blue)}
+.arch .mono{position:relative;font-family:var(--display);font-weight:800;font-size:5.5rem;color:var(--on-blue);letter-spacing:-.04em}
+.stk{position:absolute;filter:drop-shadow(0 6px 10px color-mix(in srgb,var(--ink) 18%,transparent))}
+.stk.tea{width:92px;inset-inline-start:-38px;bottom:16%;transform:rotate(-10deg)}
+.stk.star{width:78px;inset-inline-end:-28px;top:6%;transform:rotate(12deg)}
+.stk.lantern{width:64px;inset-inline-end:-18px;bottom:-14px;transform:rotate(8deg)}
+
+/* Marquee */
+.marquee{background:var(--blue);color:var(--on-blue);overflow:hidden;padding-block:1.1rem;transform:rotate(-1.2deg);margin-inline:-2rem}
+.track{display:flex;width:max-content;animation:scroll 32s linear infinite}
+.track span{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,3.6rem);padding-inline:1.2rem;white-space:nowrap;display:flex;align-items:center;gap:2.4rem}
+.track svg{width:.8em;height:.8em;color:var(--saffron);flex:none}
+@keyframes scroll{to{transform:translateX(-50%)}}
+[dir="rtl"] .track{animation-name:scrollr}
+@keyframes scrollr{to{transform:translateX(50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none}}
+
+section{padding-block:clamp(4rem,9vw,6.5rem)}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,4.8vw,3.4rem);line-height:1;letter-spacing:-.02em;margin:0 0 .7rem}
+:lang(ar) h2{line-height:1.3;letter-spacing:0}
+.lead{color:var(--muted);font-size:1.15rem;margin:0 0 2.75rem;max-width:36rem}
+
+/* Why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+@media (max-width:860px){.why{grid-template-columns:1fr}}
+.why article{background:var(--card);border-radius:24px;padding:1.75rem}
+.why svg{width:64px;height:64px;margin-bottom:.9rem}
+.why h3{font-family:var(--display);font-weight:700;font-size:1.45rem;margin:0 0 .45rem;line-height:1.15}
+.why p{margin:0;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;margin-top:3.5rem}
+.stat{width:9.5rem;height:9.5rem;border-radius:50%;display:grid;place-content:center;text-align:center;padding:1rem;color:var(--ink)}
+.stat b{font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1}
+.stat small{font-size:.86rem;line-height:1.25;margin-top:.35rem;font-weight:500}
+.stat:nth-child(1){background:var(--saffron);transform:rotate(-6deg)}
+.stat:nth-child(2){background:var(--card);border:2px dashed var(--blue);transform:rotate(4deg)}
+.stat:nth-child(3){background:var(--rose);color:#fff;transform:rotate(-3deg)}
+.stat:nth-child(4){background:var(--mint);color:#fff;transform:rotate(7deg)}
+
+/* Journey */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15.5rem,1fr));gap:1.25rem}
+.card{background:var(--card);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+.pic{aspect-ratio:4/3;display:grid;place-items:center;position:relative}
+.pic .tiles{position:absolute;inset:0;opacity:.22;color:#fff}
+.pic svg.ic{position:relative;width:84px;height:84px}
+.card .txt{padding:1.25rem 1.35rem 1.5rem}
+.when{display:inline-block;font-size:.85rem;font-weight:600;background:var(--bg);border-radius:999px;padding:.2rem .7rem;margin-bottom:.6rem}
+.card h3{font-family:var(--display);font-weight:700;font-size:1.25rem;line-height:1.2;margin:0}
+.org{color:var(--blue);font-weight:600;font-size:.95rem;margin:.25rem 0 .55rem}
+.card p.d{margin:0;color:var(--muted);font-size:1rem}
+
+/* Fit */
+.fit{background:var(--ink);color:var(--bg);border-radius:32px;padding:clamp(2rem,5vw,3.5rem)}
+.fit .lead{color:color-mix(in srgb,var(--bg) 75%,transparent)}
+.chips{display:flex;flex-wrap:wrap;gap:.7rem;list-style:none;margin:0;padding:0}
+.chips li{border:2px solid color-mix(in srgb,var(--bg) 35%,transparent);border-radius:999px;padding:.6rem 1.1rem;font-weight:600}
+.chips li:first-child{background:var(--saffron);border-color:var(--saffron);color:#1F1B3D}
+
+/* Education */
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+@media (max-width:760px){.edu{grid-template-columns:1fr}}
+.edu article{border-top:3px solid var(--ink);padding-top:1rem}
+.edu h3{font-family:var(--display);font-weight:700;font-size:1.3rem;margin:0 0 .3rem}
+.edu p{margin:0;color:var(--muted)}
+.certs{margin-top:2rem;color:var(--muted)}
+
+/* Contact */
+.contact{background:var(--saffron);color:#1F1B3D;border-radius:32px;padding:clamp(2.25rem,6vw,4rem);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;margin-bottom:4rem}
+@media (max-width:760px){.contact{grid-template-columns:1fr}.contact svg.big{display:none}}
+.contact h2{color:#1F1B3D}
+.contact p{margin:0 0 1.75rem;font-size:1.15rem;max-width:30rem}
+.contact .btn{border-color:#1F1B3D;color:#1F1B3D}
+.contact .btn.wa{background:#1F1B3D;color:#F2B23A}
+.contact svg.big{width:150px}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:0 1.5rem 3rem}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="s8" viewBox="-50 -50 100 100"><rect x="-34" y="-34" width="68" height="68"/><rect x="-34" y="-34" width="68" height="68" transform="rotate(45)"/></symbol>
+    <pattern id="zellige" width="40" height="40" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="currentColor" stroke-width="2"><use href="#s8" x="0" y="0" width="28" height="28" transform="translate(6 6)"/><circle cx="0" cy="0" r="6"/><circle cx="40" cy="0" r="6"/><circle cx="0" cy="40" r="6"/><circle cx="40" cy="40" r="6"/></g>
+    </pattern>
+    <symbol id="tea" viewBox="0 0 100 120">
+      <path d="M48 6c6 8 2 14-4 16 10 2 16-6 14-14z" fill="#2F9A78"/><path d="M52 4c10 2 16 10 10 18-4-6-10-8-10-18z" fill="#3FB38A"/>
+      <path d="M20 28h60l-8 82a8 8 0 0 1-8 7H36a8 8 0 0 1-8-7z" fill="#FFF8F4" stroke="#1F1B3D" stroke-width="3"/>
+      <path d="M26 58h48l-5 50a5 5 0 0 1-5 4H36a5 5 0 0 1-5-4z" fill="#C9862B"/>
+      <path d="M22 40h56" stroke="#F2B23A" stroke-width="6"/><path d="M24 48h52" stroke="#E4676A" stroke-width="3" stroke-dasharray="4 4"/>
+    </symbol>
+    <symbol id="star" viewBox="-50 -50 100 100"><use href="#s8" x="-50" y="-50" width="100" height="100" fill="#F2B23A" stroke="#1F1B3D" stroke-width="3"/><circle r="12" fill="#E4676A" stroke="#1F1B3D" stroke-width="3"/></symbol>
+    <symbol id="lantern" viewBox="0 0 70 110">
+      <path d="M35 2v12" stroke="#1F1B3D" stroke-width="3"/><circle cx="35" cy="6" r="4" fill="#1F1B3D"/>
+      <path d="M22 16h26l-4 10H26z" fill="#2F9A78" stroke="#1F1B3D" stroke-width="3"/>
+      <path d="M26 26h18c10 14 14 30 10 52H16c-4-22 0-38 10-52z" fill="#F2B23A" stroke="#1F1B3D" stroke-width="3"/>
+      <path d="M35 32v42M24 50h22M22 64h26" stroke="#1F1B3D" stroke-width="2" opacity=".55"/>
+      <path d="M16 78h38l-6 12H22z" fill="#2F9A78" stroke="#1F1B3D" stroke-width="3"/><path d="M35 90v14" stroke="#1F1B3D" stroke-width="3"/>
+    </symbol>
+    <symbol id="clip" viewBox="0 0 80 80"><rect x="12" y="10" width="56" height="64" rx="8" fill="#FFF8F4" stroke="#1F1B3D" stroke-width="3"/><rect x="28" y="4" width="24" height="12" rx="4" fill="#E4676A" stroke="#1F1B3D" stroke-width="3"/><path d="M24 34l6 6 10-12M24 54l6 6 10-12" stroke="#2F9A78" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M46 37h12M46 57h12" stroke="#1F1B3D" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="talk" viewBox="0 0 80 80"><path d="M6 12h44a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H24l-10 10V44H6a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6z" transform="translate(4 0)" fill="#3B3FD6" stroke="#1F1B3D" stroke-width="3"/><path d="M34 34h34a6 6 0 0 1 6 6v18a6 6 0 0 1-6 6h-6v10l-10-10H34a6 6 0 0 1-6-6V40a6 6 0 0 1 6-6z" fill="#F2B23A" stroke="#1F1B3D" stroke-width="3"/><text x="22" y="34" font-size="15" font-weight="800" fill="#FFF8F4" font-family="system-ui">FR</text><text x="40" y="56" font-size="15" font-weight="800" fill="#1F1B3D" font-family="system-ui">ع EN</text></symbol>
+    <symbol id="ticket" viewBox="0 0 80 80"><path d="M8 22h64v12a6 6 0 0 0 0 12v12H8V46a6 6 0 0 0 0-12z" fill="#E4676A" stroke="#1F1B3D" stroke-width="3"/><path d="M54 24v32" stroke="#1F1B3D" stroke-width="2" stroke-dasharray="4 3"/><use href="#s8" x="20" y="28" width="24" height="24" fill="#FFF8F4"/></symbol>
+    <symbol id="cup" viewBox="0 0 80 80"><path d="M14 26h44l-4 40a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6z" fill="#FFF8F4" stroke="#1F1B3D" stroke-width="3"/><path d="M58 34h6a8 8 0 0 1 0 16h-8" fill="none" stroke="#1F1B3D" stroke-width="3"/><path d="M26 18c0-6 6-6 6-12M38 18c0-6 6-6 6-12" stroke="#1F1B3D" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="16" y="38" width="38" height="12" fill="#2F9A78"/></symbol>
+    <symbol id="phone" viewBox="0 0 80 80"><rect x="22" y="6" width="36" height="68" rx="8" fill="#1F1B3D"/><rect x="26" y="14" width="28" height="48" rx="3" fill="#FFF8F4"/><path d="M30 22h20M30 30h14M30 38h18" stroke="#3B3FD6" stroke-width="3" stroke-linecap="round"/><circle cx="56" cy="16" r="10" fill="#E4676A" stroke="#1F1B3D" stroke-width="3"/><text x="51" y="21" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">9+</text></symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar"><div class="wrap">
+  <a class="logo" href="#top"><svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#s8" x="-50" y="-50" width="100" height="100" fill="currentColor"/></svg>Fatima Zahra</a>
+  <nav class="nav" aria-label="Sections"><a href="#why" data-t="n1">Pourquoi moi</a><a href="#journey" data-t="n2">Parcours</a><a href="#contact" data-t="n3">Contact</a></nav>
+  <div class="langs" role="group" aria-label="Langue / Language">
+    <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-lang="ar" aria-pressed="false" lang="ar">ع</button>
+  </div>
+</div></header>
+
+<div class="wrap hero" id="top">
+  <div>
+    <span class="badge"><i></i><span data-t="badge">Disponible · Maroc</span></span>
+    <h1 class="hello" data-t="hello">Bonjour, je suis Fatima Zahra.</h1>
+    <p class="sub" data-t="sub">Hôtellerie, événementiel et restauration. Formée aux États-Unis, prête pour le Maroc.</p>
+    <div class="ctas">
+      <a class="btn wa" id="wa1" href="https://wa.me/212724806462" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span data-t="cta1">Écrire sur WhatsApp</span></a>
+      <a class="btn" id="cv" href="https://wa.me/212724806462" target="_blank" rel="noopener" data-t="cta2">Recevoir mon CV</a>
+    </div>
+  </div>
+  <div class="arch-wrap">
+    <div class="arch">
+      <svg class="tiles" width="100%" height="100%" aria-hidden="true"><rect width="100%" height="100%" fill="url(#zellige)"/></svg>
+      <span class="mono" aria-hidden="true">FZ</span>
+    </div>
+    <svg class="stk tea" viewBox="0 0 100 120" aria-hidden="true"><use href="#tea"/></svg>
+    <svg class="stk star" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#star" x="-50" y="-50" width="100" height="100"/></svg>
+    <svg class="stk lantern" viewBox="0 0 70 110" aria-hidden="true"><use href="#lantern"/></svg>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<main>
+  <section class="wrap" id="why" aria-labelledby="h-why">
+    <h2 id="h-why" data-t="why_h">Pourquoi moi</h2>
+    <p class="lead" data-t="why_l">Ce que j'apporte à un hôtel, une agence ou un restaurant dès le premier jour.</p>
+    <div class="why" id="whyList"></div>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="wrap" id="journey" aria-labelledby="h-j">
+    <h2 id="h-j" data-t="j_h">Mon parcours</h2>
+    <p class="lead" data-t="j_l">Les coulisses de chaque expérience.</p>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <div class="wrap"><div class="fit">
+    <h2 data-t="fit_h">Où je peux vous aider</h2>
+    <p class="lead" data-t="fit_l">Les postes pour lesquels je suis prête aujourd'hui.</p>
+    <ul class="chips" id="chips"></ul>
+  </div></div>
+
+  <section class="wrap" aria-labelledby="h-edu">
+    <h2 id="h-edu" data-t="edu_h">Formation</h2>
+    <div class="edu" style="margin-top:2rem">
+      <article><h3 data-t="e1">Licence en management de l'hôtellerie</h3><p data-t="e1m"></p></article>
+      <article><h3 data-t="e2">Associate in Arts</h3><p data-t="e2m"></p></article>
+    </div>
+    <p class="certs" data-t="certs"></p>
+  </section>
+
+  <div class="wrap"><div class="contact" id="contact">
+    <div>
+      <h2 data-t="c_h">On en parle autour d'un thé ?</h2>
+      <p data-t="c_l">Le plus simple : un message WhatsApp. Je réponds vite.</p>
+      <div class="ctas">
+        <a class="btn wa" id="wa2" href="https://wa.me/212724806462" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span dir="ltr">+212 724 806 462</span></a>
+        <a class="btn" href="mailto:fatimazahrarhaouate@gmail.com">fatimazahrarhaouate@gmail.com</a>
+      </div>
+    </div>
+    <svg class="big" viewBox="0 0 100 120" aria-hidden="true"><use href="#tea"/></svg>
+  </div></div>
+</main>
+<footer>Fatima Zahra Rhaouate · Français · English · العربية</footer>
+
+<script>
+const D={
+fr:{n1:"Pourquoi moi",n2:"Parcours",n3:"Contact",badge:"Disponible · Maroc",hello:"Bonjour, je suis Fatima Zahra.",
+ sub:"Hôtellerie, événementiel et restauration. Formée aux États-Unis, prête pour le Maroc.",cta1:"Écrire sur WhatsApp",cta2:"Recevoir mon CV",
+ words:["Accueillir","Organiser","Coordonner","Régaler"],
+ why_h:"Pourquoi moi",why_l:"Ce que j'apporte à un hôtel, une agence ou un restaurant dès le premier jour.",
+ why:[["ticket","Les standards Disney","Un an au cœur de l'une des marques de service les plus exigeantes au monde, plus un diplôme en management de l'hôtellerie aux États-Unis."],
+  ["talk","Trois langues, zéro friction","Français, arabe et anglais : j'accueille les clients d'Europe, du Golfe et d'Amérique, chacun dans sa langue."],
+  ["clip","Le carnet de prestataires","Chez Easy Event Planning, je mettais en relation clients et prestataires. Traiteurs, déco, lieux, photographes : je sais trouver le bon."]],
+ stats:[["1 an","chez Walt Disney World"],["400","demandes clients par semaine"],["+69 %","de satisfaction client"],["3","langues de travail"]],
+ j_h:"Mon parcours",j_l:"Les coulisses de chaque expérience.",
+ cards:[["clip","var(--blue)","juin – août 2023","Stagiaire en organisation d'événements","Easy Event Planning · Tampa, Floride","J'ai développé le réseau de prestataires de l'agence et associé chaque client aux bons traiteurs, décorateurs et lieux selon son budget et son style."],
+  ["ticket","var(--rose)","mai 2022 – mai 2023","Stagiaire en hôtellerie, programme d'un an","Walt Disney World · Orlando","Accueil d'une clientèle internationale aux standards Disney, gestion des réclamations en restauration à forte affluence, hygiène et gestion des stocks."],
+  ["phone","var(--mint)","oct. 2021 – aujourd'hui","Conseillère clientèle et commerciale francophone","U-Haul · Floride","Environ 400 demandes par semaine en anglais et en français, et une satisfaction client en hausse de 69 % en six mois."],
+  ["cup","var(--saffron)","janv. – sept. 2021","Barista","Starbucks · Caroline du Nord","Service rapide à fort volume, aux standards qualité de la marque."]],
+ fit_h:"Où je peux vous aider",fit_l:"Les postes pour lesquels je suis prête aujourd'hui.",
+ chips:["Guest relations en hôtel 4 et 5 étoiles","Coordination d'événements et MICE","Organisation de mariages","Restauration et banquets","Conciergerie et accueil VIP"],
+ edu_h:"Formation",e1:"Licence en management de l'hôtellerie",e1m:"East Carolina University (États-Unis), 2023 · Spécialisations congrès et événements spéciaux, et restauration",
+ e2:"Associate in Arts",e2m:"Wake Technical Community College, 2021 · Moyenne 3,7/4",
+ certs:"Certifications : ServSafe (principes HACCP), arts culinaires, alimentation et santé, e-tourisme",
+ c_h:"On en parle autour d'un thé ?",c_l:"Le plus simple : un message WhatsApp. Je réponds vite.",
+ wa:"Bonjour Fatima Zahra, j'ai vu votre portfolio et j'aimerais échanger avec vous.",cv:"Bonjour Fatima Zahra, pourriez-vous m'envoyer votre CV ?",
+ title:"Fatima Zahra Rhaouate — Hôtellerie & événementiel"},
+en:{n1:"Why me",n2:"Journey",n3:"Contact",badge:"Available · Morocco",hello:"Hi, I'm Fatima Zahra.",
+ sub:"Hospitality, events and food & beverage. Trained in the US, ready for Morocco.",cta1:"Message me on WhatsApp",cta2:"Get my CV",
+ words:["Welcome","Plan","Host","Delight"],
+ why_h:"Why me",why_l:"What I bring to a hotel, agency or restaurant from day one.",
+ why:[["ticket","Disney standards","A full year inside one of the most demanding service brands in the world, plus a US degree in Hospitality Management."],
+  ["talk","Three languages, zero friction","French, Arabic and English: I welcome guests from Europe, the Gulf and the Americas, each in their own language."],
+  ["clip","The vendor black book","At Easy Event Planning I matched clients with vendors. Caterers, décor, venues, photographers: I know how to find the right one."]],
+ stats:[["1 yr","at Walt Disney World"],["400","customer requests a week"],["+69%","customer satisfaction"],["3","working languages"]],
+ j_h:"My journey",j_l:"Behind the scenes of every role.",
+ cards:[["clip","var(--blue)","Jun – Aug 2023","Event Planning Intern","Easy Event Planning · Tampa, Florida","Built the agency's vendor network and matched each client with the right caterers, decorators and venues for their budget and style."],
+  ["ticket","var(--rose)","May 2022 – May 2023","Hospitality Intern, One-Year Program","Walt Disney World · Orlando","Welcomed international guests to Disney standards, handled service recovery in busy food and beverage locations, and kept hygiene and inventory on track."],
+  ["phone","var(--mint)","Oct 2021 – Present","Customer Service & French Sales Rep","U-Haul · Florida","About 400 requests a week in English and French, and customer satisfaction up 69% in six months."],
+  ["cup","var(--saffron)","Jan – Sep 2021","Barista","Starbucks · North Carolina","Fast, high-volume service to brand quality standards."]],
+ fit_h:"Where I can help",fit_l:"The roles I'm ready for today.",
+ chips:["Guest relations in 4- and 5-star hotels","Event coordination and MICE","Wedding planning","Restaurants and banqueting","Concierge and VIP welcome"],
+ edu_h:"Education",e1:"BA, Hospitality Management",e1m:"East Carolina University (USA), 2023 · Concentrations in Convention & Special Events and Food & Beverage",
+ e2:"Associate in Arts",e2m:"Wake Technical Community College, 2021 · GPA 3.7",
+ certs:"Certifications: ServSafe (HACCP principles), Culinary Arts, Food and Health, E-Tourism",
+ c_h:"Let's talk over mint tea?",c_l:"The easiest way is a WhatsApp message. I reply fast.",
+ wa:"Hi Fatima Zahra, I saw your portfolio and would like to talk.",cv:"Hi Fatima Zahra, could you send me your CV?",
+ title:"Fatima Zahra Rhaouate — Hospitality & Events"},
+ar:{n1:"لماذا أنا",n2:"مساري",n3:"تواصل",badge:"متاحة · المغرب",hello:"مرحبًا، أنا فاطمة الزهراء.",
+ sub:"الضيافة والفعاليات والمطاعم. تكوين أمريكي، وجاهزة للمغرب.",cta1:"راسلوني على واتساب",cta2:"اطلبوا سيرتي الذاتية",
+ words:["نستقبل","ننظّم","ننسّق","نُبهِر"],
+ why_h:"لماذا أنا",why_l:"ما أقدّمه لفندق أو وكالة أو مطعم منذ اليوم الأول.",
+ why:[["ticket","معايير ديزني","سنة كاملة داخل واحدة من أكثر علامات الخدمة تطلّبًا في العالم، إلى جانب إجازة في إدارة الضيافة من الولايات المتحدة."],
+  ["talk","ثلاث لغات بلا عوائق","الفرنسية والعربية والإنجليزية: أستقبل الضيوف من أوروبا والخليج وأمريكا، كلٌّ بلغته."],
+  ["clip","شبكة المورّدين","في Easy Event Planning كنت أربط العملاء بالمورّدين: متعهّدو الطعام والديكور والقاعات والمصوّرون. أعرف كيف أجد الشخص المناسب."]],
+ stats:[["سنة","في والت ديزني وورلد"],["400","طلب عميل أسبوعيًا"],["+69%","في رضا العملاء"],["3","لغات عمل"]],
+ j_h:"مساري",j_l:"ما وراء كل تجربة.",
+ cards:[["clip","var(--blue)","يونيو – أغسطس 2023","متدرّبة في تنظيم الفعاليات","Easy Event Planning · تامبا، فلوريدا","بنيتُ شبكة المورّدين للوكالة، وربطتُ كل عميل بمتعهّدي الطعام والمزيّنين والقاعات المناسبة لميزانيته وأسلوبه."],
+  ["ticket","var(--rose)","مايو 2022 – مايو 2023","متدرّبة في الضيافة، برنامج لمدة سنة","Walt Disney World · أورلاندو","استقبال ضيوف من مختلف الجنسيات وفق معايير ديزني، ومعالجة الشكاوى في مطاعم مزدحمة، وسلامة الغذاء والمخزون."],
+  ["phone","var(--mint)","أكتوبر 2021 – حتى الآن","ممثلة خدمة العملاء والمبيعات بالفرنسية","U-Haul · فلوريدا","حوالي 400 طلب أسبوعيًا بالإنجليزية والفرنسية، وارتفاع رضا العملاء بنسبة 69% خلال ستة أشهر."],
+  ["cup","var(--saffron)","يناير – سبتمبر 2021","باريستا","Starbucks · كارولينا الشمالية","خدمة سريعة لعدد كبير من الزبائن وفق معايير جودة العلامة."]],
+ fit_h:"أين يمكنني مساعدتكم",fit_l:"الوظائف التي أنا جاهزة لها اليوم.",
+ chips:["العلاقات مع الضيوف في فنادق 4 و5 نجوم","تنسيق الفعاليات والمؤتمرات (MICE)","تنظيم حفلات الزفاف","المطاعم والولائم","الكونسيرج واستقبال كبار الزوار"],
+ edu_h:"التكوين",e1:"إجازة في إدارة الضيافة",e1m:"جامعة إيست كارولينا (الولايات المتحدة)، 2023 · تخصص المؤتمرات والفعاليات الخاصة، والأطعمة والمشروبات",
+ e2:"Associate in Arts",e2m:"Wake Technical Community College، 2021 · المعدل 3.7",
+ certs:"الشهادات: ServSafe (مبادئ HACCP)، فنون الطهي، الغذاء والصحة، السياحة الإلكترونية",
+ c_h:"نتحدث على كأس أتاي؟",c_l:"الأسهل: رسالة على واتساب. أردّ بسرعة.",
+ wa:"مرحبًا فاطمة الزهراء، اطّلعت على ملفك وأودّ التواصل معك.",cv:"مرحبًا فاطمة الزهراء، هل يمكنك إرسال سيرتك الذاتية؟",
+ title:"فاطمة الزهراء رحواتي — الضيافة والفعاليات"}
+};
+const VB={tea:"0 0 100 120",ticket:"0 0 80 80",talk:"0 0 80 80",clip:"0 0 80 80",phone:"0 0 80 80",cup:"0 0 80 80"};
+const icon=(id,cls="")=>`<svg ${cls?`class="${cls}"`:""} viewBox="${VB[id]}" aria-hidden="true"><use href="#${id}"/></svg>`;
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const WA="https://wa.me/212724806462?text=";
+function render(l){
+  const d=D[l];
+  document.querySelectorAll("[data-t]").forEach(e=>{const v=d[e.dataset.t]; if(typeof v==="string") e.textContent=v;});
+  const star='<svg viewBox="-50 -50 100 100"><use href="#s8" x="-50" y="-50" width="100" height="100" fill="currentColor"/></svg>';
+  const run=d.words.map(w=>`<span>${esc(w)}${star}</span>`).join("");
+  document.getElementById("track").innerHTML=run+run+run+run;
+  document.getElementById("whyList").innerHTML=d.why.map(w=>`<article>${icon(w[0])}<h3>${esc(w[1])}</h3><p>${esc(w[2])}</p></article>`).join("");
+  document.getElementById("stats").innerHTML=d.stats.map(s=>`<div class="stat"><b>${esc(s[0])}</b><small>${esc(s[1])}</small></div>`).join("");
+  document.getElementById("cards").innerHTML=d.cards.map(c=>`<article class="card"><div class="pic" style="background:${c[1]}"><svg class="tiles" width="100%" height="100%" aria-hidden="true"><rect width="100%" height="100%" fill="url(#zellige)"/></svg>${icon(c[0],"ic")}</div><div class="txt"><span class="when">${esc(c[2])}</span><h3>${esc(c[3])}</h3><p class="org">${esc(c[4])}</p><p class="d">${esc(c[5])}</p></div></article>`).join("");
+  document.getElementById("chips").innerHTML=d.chips.map(c=>`<li>${esc(c)}</li>`).join("");
+  ["wa1","wa2"].forEach(id=>document.getElementById(id).href=WA+encodeURIComponent(d.wa));
+  document.getElementById("cv").href=WA+encodeURIComponent(d.cv);
+  const h=document.documentElement; h.lang=l; h.dir=l==="ar"?"rtl":"ltr"; document.title=d.title;
+  document.querySelectorAll(".langs button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===l)));
+  try{localStorage.setItem("fzr-lang",l)}catch(e){}
+}
+document.querySelectorAll(".langs button").forEach(b=>b.addEventListener("click",()=>render(b.dataset.lang)));
+let start="fr";
+try{const s=localStorage.getItem("fzr-lang"); if(s&&D[s]) start=s; else if((navigator.language||"").toLowerCase().startsWith("ar")) start="ar";}catch(e){}
+render(start);
+</script>
+</body>
+</html>
